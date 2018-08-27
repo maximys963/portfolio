@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+    height: inherit;
 }
 .photo-text-container{
     display: flex;
@@ -35,8 +37,8 @@
     width: 80%;
 }
 .myphoto{
-    width: 45%;
-    height:45%;
+    width: 500px;
+    height:500px;
     flex-shrink: inherit;
 }
 .menu{
@@ -56,12 +58,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width:15%;
+    width:170px;
     white-space: nowrap;
     font-size: 16px;
-
-
-
 }
 .menu > li:hover{
 background: #897e8d;
@@ -120,4 +119,76 @@ background: #514b53;
     background-color: #252226;
     margin-top: 0;
     height: 50px;
+}
+/*adaptive rules*/
+@media screen and (max-width: 1120px){
+    .menu{
+        padding-left: 1px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .menu-container{
+        justify-content: center;
+    }
+
+    .photo-container{
+        height: inherit;
+    }
+
+
+}
+
+@media screen and (max-width: 860px){
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-container{
+        flex-direction: column-reverse;
+        height: 300px;
+    }
+    .menu > li{
+        padding-left: 0;
+        padding-right: 0;
+        height: 50px;
+        width:100%;
+    }
+
+    .socials{
+        height: 50px;
+        justify-content: space-around;
+        width:250px;
+    }
+    .social-net{
+        margin-left: 0;
+    }
+    .myphoto{
+        width: 350px;
+        height:350px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 681px){
+    .photo-container{
+       flex-direction: column;
+    }
+    .first{
+        height: 900px;
+    }
+    .photo-text-container{
+        width: 100%;
+    }
+    .about-me{
+        width: 95%;
+    }
+    .photo-text{
+        width: 95%;
+        font-size: 28px;
+        justify-content: center;
+    }
 }

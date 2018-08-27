@@ -26,7 +26,6 @@
     height:500px;
     opacity: 0.6;
     margin-left: 10%;
-
 }
 .skills {
     width: 30%;
@@ -83,4 +82,43 @@
     font-size: 20px;
     vertical-align: middle;
     margin-bottom: 0;
+    white-space: nowrap;
+}
+
+/*adaptive rules*/
+@media screen and (max-width: 1055px){
+    .second{
+        justify-content: space-around;
+    }
+    .react-logo{
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 864px){
+    .second{
+        justify-content: space-between;
+    }
+    .react-logo{
+        width: 400px;
+        height:400px;
+    }
+}
+
+@media screen and (max-width: 711px){
+    .second{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+    .skills {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 424px){
+    .skills {
+        width: 100%;
+    }
 }

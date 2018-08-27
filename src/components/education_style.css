@@ -29,3 +29,23 @@
     align-self: center;
     margin-top: 0;
 }
+
+@media screen and (max-width: 711px){
+    .fouth{
+      flex-direction: column;
+    }
+    .plane{
+        width: 200px;
+        height: 200px;
+    }
+    .education-info{
+        width: 90%;
+        height: inherit;
+    }
+}
+@media screen and (max-width: 452px){
+    .fouth{
+        height: 550px;
+    }
+
+}
