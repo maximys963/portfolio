@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './about_me.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 class AboutMe extends Component{
@@ -9,10 +10,10 @@ class AboutMe extends Component{
                 <div className='menu-container'>
                 <ul className='menu'>
                     <li><a>About me</a></li>
-                    <li><a href="#myskills">My skills</a></li>
-                    <li><a href="#experience">My experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#motivation">Motivation section</a></li>
+                    <li><AnchorLink href="#myskills">My skills</AnchorLink></li>
+                    <li><AnchorLink href="#experience">My experience</AnchorLink></li>
+                    <li><AnchorLink href="#education">Education</AnchorLink></li>
+                    <li><AnchorLink href="#motivation">Motivation section</AnchorLink></li>
                 </ul>
                     <ul className="socials">
                         <a href='https://www.facebook.com/maxym.panasenko'><img className="social-net" src={require(".././icons/facebook-logo.svg")} alt="facebook"/></a>
